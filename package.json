@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "npm run clean && tsc && npm run copy-views && npm run copy-public",
+    "clean": "shx rm -rf dist",
+    "copy-views": "shx cp -r src/views/ dist",
+    "copy-public": "shx cp -r src/public/ dist/public",
+    "start": "concurrently --kill-others \"npm:client\" \"npm:web-service\"",
+    "client": "node dist/client.js",
+    "web-service": "node dist/webapi.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-oauth2-jwt-bearer": "^1.10.0",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "concurrently": "^10.0.5",
+    "shx": "^0.4.0"
+  }
+}

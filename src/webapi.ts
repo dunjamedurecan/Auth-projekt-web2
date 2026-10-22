@@ -6,3 +6,7 @@ const app=express();
 app.use(cors());
 
 const authServer='';
+
+app.get("/passes/identifikator")
+
+app.post("/passes")

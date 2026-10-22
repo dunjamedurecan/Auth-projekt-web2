@@ -11,15 +11,17 @@
   },
   "dependencies": {
     "cors": "^2.8.6",
-    "dotenv": "^18.0.5",
+    "dotenv": "^18.0.7",
     "express": "^5.2.1",
     "express-oauth2-jwt-bearer": "^1.10.0",
-    "pug": "^3.0.4"
+    "pug": "^3.0.4",
+    "pg":"^8.23.1"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/pg":"^8.23.1",
     "concurrently": "^10.0.5",
     "shx": "^0.4.0"
   }

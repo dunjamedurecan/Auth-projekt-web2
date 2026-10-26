@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+        <title>{{TITLE}}|Digitalne propusnice</title>
+
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: #f4f6f8;
+                color:#17202a;
+            }
+            header{
+                padding: 1rem 2rem;
+                background: #17202a;
+            }
+            header a, header button{
+                margin-right: 1rem;
+                color:white;
+            }
+            main{
+                width: min(1100px, calc(100%-2rem));
+                margin: 2rem auto;
+            }
+            .card{
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0,0,0,.08);
+            }
+            .stats{
+                display: flex;
+                gap:1rem;
+                flex-wrap:wrap;
+            }
+            .stat {
+      flex: 1;
+      min-width: 200px;
+      padding: 1rem;
+      background: #eaf2f8;
+      border-radius: 8px;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: .5rem;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: .75rem;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    button {
+      padding: .6rem .8rem;
+      border: 0;
+      border-radius: 5px;
+      background: #2471a3;
+      color: white;
+      cursor: pointer;
+    }
+
+    button.warning {
+      background: #b9770e;
+    }
+
+    button.danger {
+      background: #c0392b;
+    }
+
+    form {
+      display: inline;
+    }
+
+    .active {
+      color: #16803c;
+      font-weight: bold;
+    }
+
+    .cancelled {
+      color: #c0392b;
+      font-weight: bold;
+    }
+
+    .muted {
+      color: #667;
+    }
+
+    a {
+      color: #1b4f72;
+    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="/">Početna</a>
+            {{NAVIGATION}}
+        </header>
+        <main>
+            {{CONTENT}}
+        </main>
+    </body>
+</html>

@@ -13,17 +13,18 @@
     "cors": "^2.8.6",
     "dotenv": "^18.0.7",
     "express": "^5.2.1",
-    "express-openid-connect": "^3.4.0",
     "express-oauth2-jwt-bearer": "^1.10.0",
+    "express-openid-connect": "^3.4.0",
+    "pg": "^8.23.1",
     "pug": "^3.0.4",
-    "pg":"^8.23.1",
-    "qrcode":"^1.5.4"
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
-    "@types/pg":"^8.23.1",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
     "concurrently": "^10.0.5",
     "shx": "^0.4.0"
   }

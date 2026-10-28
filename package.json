@@ -3,6 +3,7 @@
   "scripts": {
     "build": "npm run clean && tsc && npm run copy-views",
     "clean": "shx rm -rf dist",
+    "copy-views": "shx cp -r views/ dist",
     "start": "node dist/webapi.js"
   },
   "dependencies": {

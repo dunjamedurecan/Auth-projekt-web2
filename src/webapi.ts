@@ -42,7 +42,7 @@ const pool =new Pool({
     database: 'projekt1_baza',
     password:process.env.DB_PASSWORD,
     port:5432,
-    ssl:false
+    ssl:true
 })
 
 const app=express();

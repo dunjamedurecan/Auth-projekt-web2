@@ -57,7 +57,7 @@ const config={
     authRequired:false,
     idpLogout: true,
     secret: requiredEnv("OIDC_SESSION_SECRET"),
-    baseURL:"http://localhost:3000",
+    baseURL:publicUrl,
     clientID:requiredEnv("CLIENT_ID"),
     issuerBaseURL:authServer,
     clientSecret:requiredEnv("CLIENT_SECRET"),

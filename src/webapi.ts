@@ -415,6 +415,6 @@ app.use((err:any,req:Request,res:Response,_next:NextFunction)=>{
     res.status(status).send(status>=500 ? 'Greška na poslužitelju.':(err.message ?? 'Greška.'));
 });
 
-app.listen(port, hostname, () => {    
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });

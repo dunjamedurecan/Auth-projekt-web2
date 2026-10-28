@@ -171,7 +171,7 @@ app.get("/",async(req,res,next)=>{
             ACTIVE: String(row?.active ?? 0),
             AUTHENTICATION_MESSAGE: isLoggedIn(req) ?`
             <p> Korisnik je prijavljen.<p>
-            <a href="/passes">Otvori upravljanje propusnicama</a>`
+            <a href="/manage">Otvori upravljanje propusnicama</a>`
             :`<p>Za pregled i upravljanje propusnicama potrebna je prijava.</p>
             < href="/login">Prijava korisnika</a>`
         },getNavigation(req)

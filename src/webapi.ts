@@ -270,7 +270,7 @@ async (req,res,next)=>{
                                             </form>`
                                         :''
                                     }
-                                    <form method="post" action="/manage/${id}/delete style="display:inline;" onsubmit="return confirm('Obrisati propusnicu?');">
+                                    <form method="post" action="/manage/${id}/delete" style="display:inline;" onsubmit="return confirm('Obrisati propusnicu?');">
                                         <button class="danger" type="submit">Obriši</button>
                                     </form>
                                 </td>
